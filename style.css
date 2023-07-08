@@ -1,0 +1,607 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  /* Fonte sem serifas */
+  background-color: black;
+}
+
+/* Estilos para o cabeçalho e navegação */
+header {
+  background-color: #000000;
+  /* Fundo preto */
+  color: #FFFFFF;
+  /* Texto branco */
+  font-family: 'Barlow', sans-serif;
+  /* Fonte com serifas */
+  height: 70vh;
+
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+  background-repeat: no-repeat;
+  /*não repita a imagem */
+  background-position: center;
+  /* a imagem fique centralizada */
+  background-size: cover;
+  /*para o css organizar a imagem para que fique espalhada por todo espaço e não perca resolução*/
+  height: 70vh;
+  /* para que a altura da div fique a 40% da vizualição da tela */
+}
+
+.slide1 {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/1.png");
+  /* endereço da imagem */
+
+}
+
+.slide2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/2.png");
+  /* endereço da imagem */
+
+}
+
+.slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/3.png");
+  /* endereço da imagem */
+
+}
+
+.slide4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/4.png");
+  /* endereço da imagem */
+
+}
+
+.carousel-item .active {
+  display: flex !important;
+
+}
+
+.carousel-item img {
+  max-height: 20vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Estilo para links quando o mouse passa por cima */
+nav ul li a:hover {
+  color: #ffb300;
+  /* Cor do texto amarela quando o mouse passar por cima */
+
+}
+
+nav ul li a {
+  color: #fff;
+  /* Texto branco */
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  /* Fonte sem serifas */
+  font-weight: bold;
+}
+
+/* Estilos para a seção de destaque (marcos) */
+
+.marcos {
+  /* background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTd1bGJvM3NyaDl4cWdoMndwZWx2NzQ4azBiaHlqOHJoa3EwOXIxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fYJTYB4uVpsVEXk6dw/giphy.gif"); */
+  max-height: 20vh;
+  color: #FFFFFF;
+  /* Texto branco */
+  font-family: 'Barlow', sans-serif;
+}
+
+.marcos-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.marcos h1 {
+  font-size: 40px;
+}
+
+.marcos p {
+  font-size: 20px;
+  height: 20vh;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #FFD93D;
+  /* Fundo amarelo */
+  color: #000000;
+  /* Texto preto */
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  text-align: left;
+
+}
+
+.texto-autor {
+  align-items: center;
+}
+
+.texto {
+  background-color: #202020;
+  /* Fundo cinza claro */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+}
+
+.texto p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.movimentar {
+  display: inline-block;
+  animation: moverCor 2s infinite;
+  padding-top: 50%;
+}
+
+@keyframes moverCor {
+  0% {
+    color: ghostwhite;
+  }
+
+  25% {
+    color: #F8F8F8;
+  }
+
+  50% {
+    color: ghostwhite;
+  }
+
+  75% {
+    color: yellow;
+  }
+
+  100% {
+    color: ghostwhite;
+  }
+}
+
+.animacao {
+  display: inline-block;
+  animation: animarPalavra 2s infinite;
+}
+
+@keyframes animarPalavra {
+  0% {
+    transform: scale(1);
+    color: ghostwhite;
+  }
+
+  50% {
+    transform: scale(1.2);
+    color: ghostwhite;
+  }
+
+  100% {
+    transform: scale(1);
+    color: whitesmoke;
+  }
+}
+
+
+/* Estilos para a seção de serviços */
+.servicos {
+  position: relative;
+  /* Adiciona posição relativa */
+  padding-top: 20px;
+  background: #FFD93D;
+  color: white;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
+.titulo-servicos {
+  position: absolute;
+  /* Adiciona posição absoluta */
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  /* cor do background */
+  z-index: 1;
+  /* Define a ordem de sobreposição */
+}
+
+.servico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #ffb300;
+  /* Fundo branco */
+}
+
+.servico {
+  text-align: center;
+  margin: 20px;
+  flex-basis: 300px;
+}
+
+.servico img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.servico h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 16px;
+}
+
+
+.card-img-top {
+  border-radius: 2px;
+  box-shadow: 4px 4px 4px white;
+}
+
+.card-body {
+  background-color: #181823;
+  border-radius: 2px;
+  box-shadow: 4px 4px 4px white;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-title {
+  color: #FFD95A;
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+}
+
+.video-wrapper {
+  flex: 1;
+  max-width: 50%;
+}
+
+.video-wrapper video {
+  width: 400px;
+  /* Define a largura desejada */
+  height: 400px;
+  /* Define a altura desejada */
+  margin: 30px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px black;
+}
+
+#meio-depoimento {
+  background-color: #FFD93D;
+}
+
+.text-wrapper {
+  flex: 1;
+  max-width: 40%;
+  padding: 5px;
+}
+
+.text-wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-wrapper p {
+  font-size: 16px;
+}
+
+.video-wrapper-depoimento {
+  box-shadow: 10px 5px 10px;
+}
+
+/* Estilos para a seção de Aula */
+.aulas {
+  text-align: center;
+  padding: 50px;
+  background: #ede634;
+}
+
+.titulo-aulas {
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  font-size: 24px;
+  /* Define o tamanho da fonte como 24px */
+  margin-top: 50px;
+  /* Adiciona uma margem superior de 50px */
+  margin-bottom: 20px;
+  /* Adiciona uma margem inferior de 20px */
+  margin-left: 25px;
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+  /*Aulasss*/
+}
+
+.grid-aulas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+
+.aula {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aula img {
+  width: 78%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.aula h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.aula p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.aula a {
+  display: inline-block;
+  background-color: #ede634;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+/* Estilos para a seção de depoimento */
+
+.depoimento {
+  display: flex;
+  /* Exibe os elementos em um layout flexível */
+  flex-direction: column;
+  /* Define a direção dos elementos como coluna */
+  justify-content: center;
+  /* Centraliza verticalmente os elementos */
+  align-items: center;
+  /* Centraliza horizontalmente os elementos */
+  flex-wrap: wrap;
+  /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura disponível */
+  padding: 50px;
+  /* Adiciona espaçamento interno de 50px */
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.depoimento {
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  margin: 20px;
+  /* Adiciona margem de 20px em todas as direções */
+  flex-basis: 300px;
+  /* Define a largura base dos elementos como 300px */
+
+}
+
+.titulo-depoimentos {
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  font-size: 24px;
+  /* Define o tamanho da fonte como 24px */
+  margin-top: 50px;
+  /* Adiciona uma margem superior de 50px */
+  margin-bottom: 20px;
+  /* Adiciona uma margem inferior de 20px */
+  margin-left: 25px;
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+}
+
+
+.video-wrapper-depoimento {
+
+  max-width: 100%;
+  text-align: center;
+}
+
+.video-wrapper-depoimento video {
+  width: 400px;
+  /* Define a largura desejada */
+  height: 400px;
+  /* Define a altura desejada */
+  margin: 40px;
+  text-align: center;
+}
+
+.depoimento img {
+  width: 150px;
+  /* Define a largura da imagem como 150px */
+  height: 150px;
+  /* Define a altura da imagem como 150px */
+  border-radius: 50%;
+  /* Adiciona um raio de borda para obter uma forma circular */
+  margin-bottom: 20px;
+  /* Adiciona uma margem inferior de 20px */
+}
+
+.depoimento h3 {
+  font-size: 24px;
+  /* Define o tamanho da fonte como 24px */
+  margin-bottom: 10px;
+  /* Adiciona uma margem inferior de 10px */
+  font-family: 'Tomorrow', sans-serif;
+  color: #ede634;
+}
+
+.depoimento p {
+  font-size: 16px;
+  /* Define o tamanho da fonte como 16px */
+  font-family: 'Tomorrow', sans-serif;
+  color: #ede634;
+}
+
+/* Estilos para O whatsapp */
+.whatsapp {
+  padding: 8px;
+  margin-right: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  background-color: #03a900;
+  color: white;
+  border-radius: 5px;
+}
+
+.whatsapp i {
+  font-size: 40px;
+}
+
+.whatsapp a {
+  text-decoration: none;
+  color: #fff;
+  /*cor do link do wpp*/
+}
+
+/* Estilos do formulário */
+.form-title {
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  font-size: 24px;
+  /* Define o tamanho da fonte como 24px */
+  margin-top: 50px;
+  /* Adiciona uma margem superior de 50px */
+  margin-bottom: 20px;
+  /* Adiciona uma margem inferior de 20px */
+  margin-left: 25px;
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+}
+
+.form-title-texto p {
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  margin: 25px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* Adiciona margem inferior */
+}
+
+#gender {
+  margin-bottom: 20px;
+  /* Adiciona margem inferior ao campo de objetivo */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #84740c;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.cancelar-button {
+  background-color: #c92c2c;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+
+}
+
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #000000;
+  /* Fundo preto */
+  padding: 10px;
+  color: #FFFFFF;
+  /* Texto branco */
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  /* Fonte sem serifas */
+}
+
+footer a {
+  color: aqua;
+}
+
+footer:hover a {
+  color: darksalmon;
+}
