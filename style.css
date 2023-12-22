@@ -54,6 +54,23 @@ header {
   /* endereço da imagem */
 
 }
+.slide5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/5.png");
+  /* endereço da imagem */
+
+}
+
+.slide6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/6.png");
+  /* endereço da imagem */
+
+}
+
+.slide7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/imgCarousel/7.png");
+  /* endereço da imagem */
+
+}
 
 .carousel-item .active {
   display: flex !important;
@@ -145,9 +162,9 @@ nav ul li a {
 }
 
 .texto {
-  background-color: #202020;
-  /* Fundo cinza claro */
-  padding: 20px;
+  background-color: #000000;
+  /* Fundo preto */
+  padding: 10px;
   text-align: center;
   font-family: 'Barlow', sans-serif;
 }
@@ -408,7 +425,7 @@ nav ul li a {
   /* Centraliza horizontalmente os elementos */
   flex-wrap: wrap;
   /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura disponível */
-  padding: 50px;
+  padding: 30px;
   /* Adiciona espaçamento interno de 50px */
   background-color: #000;
   border-radius: 10px;
